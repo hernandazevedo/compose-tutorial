@@ -4,7 +4,6 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.ui.graphics.Color
 
-
 val Yellow800 = Color(0xFFF29F05)
 val Red300 = Color(0xFFEA6D7E)
 val Neutral8 = Color(0xff121212)
@@ -16,17 +15,6 @@ val Neutral3 = Color(0x1fffffff)
 val Neutral2 = Color(0x61ffffff)
 val Neutral1 = Color(0xbdffffff)
 val Neutral0 = Color(0xffffffff)
-
-val DarkColorsPalette = darkColors(
-    primary = Yellow800,
-    onPrimary = Color.Black,
-    primaryVariant = Yellow800,
-    secondary = Yellow800,
-    onSecondary = Color.Black,
-    error = Red300,
-    onError = Color.Black,
-    background = Neutral8
-)
 
 private val crane_red = Color(0xFFE30425)
 private val crane_white = Color.White
@@ -41,4 +29,16 @@ val LightColorsPalette = lightColors(
     onSurface = crane_white,
     primaryVariant = crane_purple_700,
     background = Neutral0
+)
+
+val DarkColorsPalette = darkColors(
+    primary = Yellow800,
+    onPrimary = Color.White,
+    primaryVariant = Yellow800,
+    secondary = Yellow800,
+    onSecondary = Color.White,
+    error = Red300,
+    onError = Color.Black,
+    background = Neutral8,
+    surface = Neutral0
 )

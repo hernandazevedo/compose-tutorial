@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -44,7 +45,7 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun MessageCard(msg: Message) {
-        Row(modifier = Modifier.padding(all = 8.dp)) {
+        Row(modifier = Modifier.padding(all = 8.dp).background(color = MaterialTheme.colors.background)) {
             Image(
                 painter = painterResource(id = R.drawable.ic_profile),
                 contentDescription = "Profile picture",
@@ -64,6 +65,7 @@ class MainActivity : ComponentActivity() {
                 Surface(shape = MaterialTheme.shapes.medium, elevation = 1.dp) {
                     Text(
                         text = msg.body,
+                        color = MaterialTheme.colors.secondaryVariant,
                         style = MaterialTheme.typography.body2,
                         modifier = Modifier.padding(all = 4.dp)
                     )
