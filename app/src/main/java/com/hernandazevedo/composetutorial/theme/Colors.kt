@@ -23,7 +23,7 @@ private val crane_purple_800 = Color(0xFF5D1049)
 private val crane_purple_900 = Color(0xFF4E0D3A)
 
 val LightColorsPalette = lightColors(
-    primary = crane_purple_800,
+    primary = Red300,
     secondary = crane_red,
     surface = crane_purple_900,
     onSurface = crane_white,
@@ -32,9 +32,9 @@ val LightColorsPalette = lightColors(
 )
 
 val DarkColorsPalette = darkColors(
-    primary = Yellow800,
+    primary = Neutral7,
     onPrimary = Color.White,
-    primaryVariant = Yellow800,
+    primaryVariant = Neutral7,
     secondary = Yellow800,
     onSecondary = Color.White,
     error = Red300,
